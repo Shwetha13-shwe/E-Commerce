@@ -11,4 +11,5 @@ public interface MerchantService {
 String register(UserDto userDto, Model model );
 String register(UserDto userDto, BindingResult result,HttpSession session);
 String sumbitOtp(int otp, HttpSession session);
+String loadHome(HttpSession session);
 }
