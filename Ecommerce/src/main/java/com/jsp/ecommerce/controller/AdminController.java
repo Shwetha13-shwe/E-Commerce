@@ -39,7 +39,13 @@ public String loadOtp() {
 
 @PostMapping("/otp")
 public String submitOtp(@RequestParam("otp") int otp,HttpSession session) {
+	
 	return adminService.submitOtp(otp,session);
 }
+@GetMapping("/home")
+	public String loadHome() {
+		return "admin-home.html";
+	}
+
 
 }
